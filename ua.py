@@ -22,7 +22,7 @@ from json import dumps
 try:
     from websocket import create_connection
 except:
-    system('pip install websocket-client')
+    os.system('pip install websocket-client')
     from websocket import create_connection
 
 failed = 0
